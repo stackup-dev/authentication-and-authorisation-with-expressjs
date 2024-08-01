@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 response = await response.json();
                 if (response.ok) {
-                    window.location.href = 'profile.html';
+                    window.location.href = 'pages/profile.html';
                 } else {
                     alert('Login failed!');
                 }
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 response = await response.json();
                 if (response.ok) {
-                    window.location.href = 'index.html';
+                    window.location.href = '../index.html';
                 } else {
                     alert('Logout failed!');
                 }
