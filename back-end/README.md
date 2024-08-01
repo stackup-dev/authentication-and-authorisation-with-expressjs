@@ -14,7 +14,8 @@ This will install the dependencies declared by the `package.json` and `package-l
 
 ## How to run
 
-Make sure you have installed the dependencies by following the instructions from the [Installing dependencies](#installing-dependencies) section.
+> [!IMPORTANT]
+> Make sure you have installed the dependencies by following the instructions from the [Installing dependencies](#installing-dependencies) section.
 
 Next, create a new file called `.env` at the root of the `back-end` directory. Copy and paste the following contents from the code
 snippet
