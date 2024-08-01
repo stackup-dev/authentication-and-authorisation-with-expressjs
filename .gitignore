@@ -1,3 +1,4 @@
 *.env.*
 .zk
 node_modules
+*.sqlite*
