@@ -25,6 +25,9 @@ TOKEN_KEY="StackUpAuthenticationProject123!"
 PORT=4001
 ```
 
+> [!IMPORTANT]
+> Always make sure that whenever you have sensitive information such as keys and personal access tokens, `.env` files should not be tracked by Git's source control by adding it to the file called `.gitignore`.
+
 Next, open a new terminal and head to the root of the `back-end` directory. Finally, run the following command
 
 ```bash
@@ -32,4 +35,4 @@ node app.js
 ```
 
 This will run an instance of the back-end. This should run in the background (i.e. in another terminal) while
-the frontend is live.
+the frontend is live at http://localhost:4001.
