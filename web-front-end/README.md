@@ -2,6 +2,10 @@
 
 This contains the files for the webpage. This contains a basic login modal and a register modal.
 
+Before running, head to the [js](./js) directory and edit the
+[scripts.js](./js/scripts.js) file as necessary based on the note of the `README.md` located in the
+[js](./js) directory.
+
 ## How to run
 
 Using `python3`, you can run a live server by running the following command at the **root of the `web-front-end` directory**.
