@@ -40,7 +40,7 @@ node app.js
 This will run an instance of the back-end. This should run in the background (i.e. in another terminal) while
 the frontend is live at http://localhost:4001.
 
-> [!INFO] 
+> [!NOTE]
 > If you are using GitHub Codespaces, Gitpod or similar, those URLs might be redirected in VSCode Web (or VSCode desktop). You should check the **Ports** tab of your editor. Your URL
 http://localhost:4001 might be redirected to something like http://orange-marmalade.github.codespace.dev (not a real link). If it is set to private while running, please set it to
 Public by right-clicking the row of where the redirected URL is.
