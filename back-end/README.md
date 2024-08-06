@@ -91,3 +91,7 @@ The ORM will take in the defined parameters from our code and convert it into an
 ### JSONWebToken
 
 JSON Web Tokens (JWTs) are a standardized way to securely send data between two parties. The JS/TS library is an implementation of this web encryption standard. This is used to encrypt passwords and session tokens for authenticated users.
+
+### BcryptJS
+
+This dependency encrypts the password of the account, it is the JavaScript implementation of the Bcrypt hashing algorithm, allowing you to use the hash encryption without having to meddle with complex hashing functions.
