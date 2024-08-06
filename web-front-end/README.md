@@ -22,3 +22,28 @@ http://localhost:8080 might be redirected to something like http://orange-marmal
 Public by right-clicking the row of where the redirected URL is.
 
 Make sure the backend is running. Instructions to run the backend is located at the `back-end` directory's `README.md`.
+
+## File Structure
+
+```
+.
+└── .
+    ├── index.html
+    ├── js
+    │   ├── README.md
+    │   └── scripts.js
+    ├── pages
+    │   ├── profile.html
+    │   └── register.html
+    ├── README.md
+    └── styles
+        └── styles.css
+
+5 directories, 7 files
+```
+
+The `index.html` file is where the login logic resides. The `profile.html` file is where the profile section resides. The `register.html` is where the register logic resides.
+We also have `style.css` which contains the styling of our modals. Combining all this, the `scripts.js` allows the frontend to communicate with the backend such as
+- authentication logins
+- registration
+- routing
