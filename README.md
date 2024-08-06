@@ -41,3 +41,25 @@ for each code.
 
 > [!IMPORTANT]
 > It is recommended to read through each `README.md` file as they contain information that you might need for further understanding of the campaign.
+
+## Where to read first?
+
+There is no given order to read through each directory. However, we do recommend this flowchart to know how interconnected they are.
+
+```mermaidjs
+flowchart RL
+subgraph g1[back-end]
+service --> database
+service --> security
+security <-.-> controllers
+utils <--> database --> models
+controllers .-> routes
+end
+subgraph f1[web-front-end]
+index.html --> pages
+pages <-.-> js
+index.html <-.-> js
+end
+routes <--> index.html
+routes <--> pages
+```
