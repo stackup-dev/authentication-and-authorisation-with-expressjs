@@ -46,7 +46,7 @@ for each code.
 
 There is no given order to read through each directory. However, we do recommend this flowchart to know how interconnected they are.
 
-```mermaidjs
+```mermaid
 flowchart RL
 subgraph g1[back-end]
 service --> database
