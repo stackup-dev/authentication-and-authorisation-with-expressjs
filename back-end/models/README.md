@@ -17,4 +17,5 @@ There are **8 entities** declared in the Database Schema
 For now, just know that the most important entities that secures an account are
 `salt` and `password`. The former is the additional input to hash a data such as
 a password or a passphrase. Salting helps defend against brute-force and dictionary attacks.
+
 More info about Salt in their website <https://docs.saltproject.io/en/latest/topics/about_salt_project.html#about-salt>.
