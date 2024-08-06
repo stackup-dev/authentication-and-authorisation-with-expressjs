@@ -60,6 +60,5 @@ index.html --> pages
 pages <-.-> js
 index.html <-.-> js
 end
-routes <--> index.html
-routes <--> pages
+routes <--> js
 ```
