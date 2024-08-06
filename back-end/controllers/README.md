@@ -10,7 +10,7 @@ data after logging out.
 For already logged in (or more accurately, authenticated) users, the
 `authController.js` file allows user operations such as
 
-- loading their user profile; and 
+- loading their user profile; and
 - updating their user profile
 
 ## An Expanded Explanation

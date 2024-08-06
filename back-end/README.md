@@ -4,7 +4,7 @@ This directory contains the necessary parts of running the authentication algori
 
 ## Installing dependencies
 
-Run the following commands at the root of the `back-end` directory. 
+Run the following commands at the root of the `back-end` directory.
 
 ```
 npm install
@@ -21,8 +21,8 @@ Next, create a new file called `.env` at the root of the `back-end` directory. C
 snippet.
 
 ```js
-TOKEN_KEY="StackUpAuthenticationProject123!"
-PORT=4001
+TOKEN_KEY = "StackUpAuthenticationProject123!";
+PORT = 4001;
 ```
 
 The contents of the file are called **Environmental Variables**. Node by default uses environmental variables from the development environment but sometimes manually adding this in the terminal can be
@@ -42,8 +42,8 @@ the frontend is live at http://localhost:4001.
 
 > [!NOTE]
 > If you are using GitHub Codespaces, Gitpod or similar, those URLs might be redirected in VSCode Web (or VSCode desktop). You should check the **Ports** tab of your editor. Your URL
-http://localhost:4001 might be redirected to something like http://orange-marmalade.github.codespace.dev (not a real link). If it is set to private while running, please set it to
-Public by right-clicking the row of where the redirected URL is.
+> http://localhost:4001 might be redirected to something like http://orange-marmalade.github.codespace.dev (not a real link). If it is set to private while running, please set it to
+> Public by right-clicking the row of where the redirected URL is.
 
 ### About the environmental variables
 
@@ -52,17 +52,16 @@ The purpose of the environmental variables `TOKEN_KEY` and `PORT` are
 1. The `TOKEN_KEY` is a string that is used to create a cookie signature. It is like a password for your platform. In the code above, the Token Key is in a readable format. However, you can also use a gibberish string with no meaning as your token key.
 2. We defined our `PORT` number as 4001. Port numbers can be any number within the range of 1 to 65535. Only one application can use a specific port at any point in time. As long as the port is free, your NodeJS application can use it and listen for incoming requests. However, there are some restrictions and conventions you will need to adhere to. To name a few, ports 80 and 443 are reserved for HTTP requests, port 22 is for Secure Sockets Layer (SSL) connections and port 21 is for File Transfer Protocol (FTP).To learn more about the various port reservations, you may read more about it [here](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
 
-
 ## Dependencies
 
-- bcryptjs 
-- body-parser 
+- bcryptjs
+- body-parser
 - cookie-parser
-- cors 
-- dotenv 
-- express 
-- jsonwebtoken 
-- morgan 
+- cors
+- dotenv
+- express
+- jsonwebtoken
+- morgan
 - sequelize
 - sqlite3
 

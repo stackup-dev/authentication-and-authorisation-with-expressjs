@@ -1,37 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h2>User Profile</h2>
-        <div id="userProfile">
-            <p><strong>Name:</strong> <span id="userName"></span></p>
-            <p><strong>Email:</strong> <span id="userEmail"></span></p>
-            <p><strong>Contact:</strong> <span id="userContact"></span></p>
-            <button id="editProfile">Edit Profile</button>
-            <button id="logout">Logout</button>
-        </div>
-        <div id="editProfileForm" style="display:none;">
-            <form id="updateForm">
-                <label for="editName">Name:</label>
-                <input type="text" id="editName" name="name" required>
-                <label for="editEmail">Email:</label>
-                <input type="email" id="editEmail" name="email" required>
-                <label for="editContact">Email:</label>
-                <input type="tel" id="editContact" name="contact" required>
-                <button type="submit">Update</button>
-            </form>
-            <button id="cancelEdit" style="margin-top: 10px;">Cancel</button>
-        </div>
+      <h2>User Profile</h2>
+      <div id="userProfile">
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Contact:</strong> <span id="userContact"></span></p>
+        <button id="editProfile">Edit Profile</button>
+        <button id="logout">Logout</button>
+      </div>
+      <div id="editProfileForm" style="display: none">
+        <form id="updateForm">
+          <label for="editName">Name:</label>
+          <input type="text" id="editName" name="name" required />
+          <label for="editEmail">Email:</label>
+          <input type="email" id="editEmail" name="email" required />
+          <label for="editContact">Email:</label>
+          <input type="tel" id="editContact" name="contact" required />
+          <button type="submit">Update</button>
+        </form>
+        <button id="cancelEdit" style="margin-top: 10px">Cancel</button>
+      </div>
     </div>
     <script src="../js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

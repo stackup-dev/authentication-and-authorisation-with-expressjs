@@ -37,7 +37,7 @@
 ```
 
 The directory structure for the code of Quest 1 follows this scheme. Each directory has a `README.md` (some not shown in the `tree`) explaining the purpose and the rationale
-for each code. 
+for each code.
 
 > [!IMPORTANT]
 > It is recommended to read through each `README.md` file as they contain information that you might need for further understanding of the campaign.
