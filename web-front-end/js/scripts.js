@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         response = await response.json();
         if (response.ok) {
-          window.location.href = "index.html";
+          window.location.href = "../index.html";
         } else {
           alert("Registration failed!");
         }
