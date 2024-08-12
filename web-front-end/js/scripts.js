@@ -1,7 +1,7 @@
-const endpoint = "http://127.0.0.1:4001";
+const BASE_URL = "http://127.0.0.1:4001";
 
 document.getElementById("grantAdmin").addEventListener("click", () => {
-	fetch(`${endpoint}/auth/grant/admin`, {
+	fetch(`${BASE_URL}/auth/grant/admin`, {
 		method: "POST",
 		credentials: "include",
 	})
@@ -16,7 +16,7 @@ document.getElementById("grantAdmin").addEventListener("click", () => {
 });
 
 document.getElementById("grantUser").addEventListener("click", () => {
-	fetch(`${endpoint}/auth/grant/user`, {
+	fetch(`${BASE_URL}/auth/grant/user`, {
 		method: "POST",
 		credentials: "include",
 	})
@@ -31,7 +31,7 @@ document.getElementById("grantUser").addEventListener("click", () => {
 });
 
 document.getElementById("loadAdmin").addEventListener("click", () => {
-	fetch(`${endpoint}/auth/load/admin`, {
+	fetch(`${BASE_URL}/auth/load/admin`, {
 		credentials: "include",
 	})
 		.then((response) => response.json())
@@ -45,7 +45,7 @@ document.getElementById("loadAdmin").addEventListener("click", () => {
 });
 
 document.getElementById("loadUser").addEventListener("click", () => {
-	fetch(`${endpoint}/auth/load/user`, {
+	fetch(`${BASE_URL}/auth/load/user`, {
 		credentials: "include",
 	})
 		.then((response) => response.json())
@@ -59,7 +59,7 @@ document.getElementById("loadUser").addEventListener("click", () => {
 });
 
 document.getElementById("logout").addEventListener("click", () => {
-	fetch(`${endpoint}/auth/logout`, {
+	fetch(`${BASE_URL}/auth/logout`, {
 		method: "POST",
 		credentials: "include",
 	})
