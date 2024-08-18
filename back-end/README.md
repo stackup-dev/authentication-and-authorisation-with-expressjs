@@ -61,7 +61,6 @@ The purpose of the environmental variables `TOKEN_KEY` and `PORT` are
 
 ## Dependencies
 
-- bcryptjs
 - body-parser
 - cookie-parser
 - cors
@@ -69,8 +68,6 @@ The purpose of the environmental variables `TOKEN_KEY` and `PORT` are
 - express
 - jsonwebtoken
 - morgan
-- sequelize
-- sqlite3
 
 These dependencies are used for the backend. We will only be describing the relevant ones.
 
