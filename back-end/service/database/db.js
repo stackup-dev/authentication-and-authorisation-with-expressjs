@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const sequelize = new Sequelize("sqlite::memory:", {
+const sequelize = new Sequelize({
 	dialect: "sqlite",
 	storage: "./service/database/db.sqlite",
 	logging: false,
