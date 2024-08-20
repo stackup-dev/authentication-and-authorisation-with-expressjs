@@ -10,12 +10,7 @@ const authorisation = ({ isAdmin }) => {
 		const xAccessToken = user?.user?.token;
 		console.log("Access Token", xAccessToken);
 		if (xAccessToken) {
-			token = xAccessToken;
-			token = JSON.stringify(token)
-				.replaceAll('"', "")
-				.trim()
-				.replaceAll("\\", "");
-			const decoded = jwt.verify(token, config.TOKEN_KEY);
+			const decoded = jwt.verify(xAccessToken, config.TOKEN_KEY);
 			userHasAdminRole = decoded.isAdmin;
 			console.log("Decoded", userHasAdminRole);
 		} else {
