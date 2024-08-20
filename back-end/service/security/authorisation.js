@@ -7,7 +7,8 @@ const authorisation = ({ isAdmin }) => {
 		const user = req.signedCookies;
 		let userHasAdminRole = undefined;
 
-		const xAccessToken = req.headers["x-access-token"];
+		const xAccessToken = user?.user?.token;
+		console.log("Access Token", xAccessToken);
 		if (xAccessToken) {
 			token = xAccessToken;
 			token = JSON.stringify(token)
@@ -16,9 +17,17 @@ const authorisation = ({ isAdmin }) => {
 				.replaceAll("\\", "");
 			const decoded = jwt.verify(token, config.TOKEN_KEY);
 			userHasAdminRole = decoded.isAdmin;
+			console.log("Decoded", userHasAdminRole);
 		} else {
-			userHasAdminRole = user?.user?.isAdmin;
+			return res.status(401).send({
+				auth: false,
+				message: "You are not authorised to access this page.",
+				status: 401,
+				payload: null,
+			});
 		}
+		console.log("Access Token", xAccessToken);
+		console.log("Token", user?.user?.token);
 
 		if (convertToRole(userHasAdminRole) >= convertToRole(isAdmin)) {
 			return next();
